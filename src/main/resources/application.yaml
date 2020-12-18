@@ -15,6 +15,11 @@ spring:
     baseline-on-migrate: true
 
 # Application settings
+info:
+  application:
+    name: "hello boot"
+    description: "some description here..."
+    java-vendor: "${java.specification.vendor}"
 app:
   datasource:
     jdbc-url: jdbc:postgresql://localhost:5432/postgres   # - is not allowed in the db name
