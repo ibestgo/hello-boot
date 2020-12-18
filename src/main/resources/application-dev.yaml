@@ -1,0 +1,4 @@
+my:
+  greeting: "Dev env - Hello World"
+  list:
+    values: One, Two, Three, Four, Five, Six, Seven, Nine, Ten, DevDev

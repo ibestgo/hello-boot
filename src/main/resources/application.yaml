@@ -11,6 +11,8 @@ management:
 
 # Flyway settings
 spring:
+  profiles:
+    active: ${APP_ENV}  # "dev, dev1" for multiple active profiles.
   flyway:
     baseline-on-migrate: true
 
