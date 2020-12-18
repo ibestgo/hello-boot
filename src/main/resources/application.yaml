@@ -1,0 +1,34 @@
+# Spring Boot Actuator settings
+management:
+  endpoints:
+    web:
+      #base-path: "/mgmt"
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: "always"
+
+# Flyway settings
+spring:
+  flyway:
+    baseline-on-migrate: true
+
+# Application settings
+app:
+  datasource:
+    jdbc-url: jdbc:postgresql://localhost:5432/postgres   # - is not allowed in the db name
+    username: postgres
+    password: hello
+    maximum-pool-size: 30   # number of connections
+
+# The followings are just testing purpose.
+db:
+  connection: "(connectionstring: 'http://zzzzzz', userName: 'foo', password: 'bar')"
+  host: 127.0.0.1
+  port: 8080
+
+my:
+  greeting: Hello World
+  list:
+    values: One, Two, Three, Four

@@ -1,0 +1,14 @@
+package com.bestgo.helloboot.play;
+
+import org.springframework.boot.actuate.health.Health;
+import org.springframework.boot.actuate.health.ReactiveHealthIndicator;
+import org.springframework.stereotype.Component;
+
+// Revisit later
+@Component
+public class DownstreamServiceHealthIndicator implements ReactiveHealthIndicator {
+  @Override
+  public reactor.core.publisher.Mono<Health> health() {
+    return null;
+  }
+}

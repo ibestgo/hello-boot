@@ -1,0 +1,2 @@
+ALTER TABLE person
+ADD COLUMN mobile VARCHAR(15);
