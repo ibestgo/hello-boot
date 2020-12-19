@@ -1,3 +1,5 @@
+debug: false
+
 # Spring Boot Actuator settings
 management:
   endpoints:
@@ -10,9 +12,9 @@ management:
       show-details: "always"
 
 # Flyway settings
+spring.cloud.config.uri: http://localhost:8888
+# spring.profiles.active: ${APP_ENV:dev1}  # "dev, dev1" for multiple active profiles.
 spring:
-  profiles:
-    active: ${APP_ENV}  # "dev, dev1" for multiple active profiles.
   flyway:
     baseline-on-migrate: true
 
@@ -30,12 +32,14 @@ app:
     maximum-pool-size: 30   # number of connections
 
 # The followings are just testing purpose.
-db:
-  connection: "(connectionstring: 'http://zzzzzz', userName: 'foo', password: 'bar')"
-  host: 127.0.0.1
-  port: 8080
+#db:
+#  connection: "(connectionstring: 'http://zzzzzz', userName: 'foo', password: 'bar')"
+#  host: 127.0.0.1
+#  port: 8080
 
 my:
-  greeting: Hello World
+  greeting: Hello World (Default)
   list:
-    values: One, Two, Three, Four
+    values: One, Two, Three, (Default)
+
+car.service.mode: truck

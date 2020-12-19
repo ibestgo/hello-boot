@@ -58,7 +58,24 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.cloud</groupId>-->
+<!--			<artifactId>spring-cloud-starter-config</artifactId>-->
+<!--			<version>2.2.6.RELEASE</version>-->
+<!--		</dependency>-->
 	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+<!--			<dependency>-->
+<!--				<groupId>org.springframework.cloud</groupId>-->
+<!--				<artifactId>spring-cloud-dependencies</artifactId>-->
+<!--				<version>Hoxton.SR9</version> &lt;!&ndash; Spring Cloud 2020.0.0 will be compatible with Boot 2.4.0. .Hoxton will not be compatible with boot 2.4.x ; 2020.0.0-M4- Issue at https://github.com/spring-cloud/spring-cloud-config/issues/1543&ndash;&gt;-->
+<!--				<type>pom</type>-->
+<!--				<scope>import</scope>-->
+<!--			</dependency>-->
+		</dependencies>
+	</dependencyManagement>
 
 	<build>
 		<plugins>

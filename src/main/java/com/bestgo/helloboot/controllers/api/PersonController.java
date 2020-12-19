@@ -1,4 +1,4 @@
-package com.bestgo.helloboot.api;
+package com.bestgo.helloboot.controllers.api;
 
 import com.bestgo.helloboot.model.Person;
 import com.bestgo.helloboot.service.PersonService;

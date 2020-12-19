@@ -1,4 +1,4 @@
-package com.bestgo.helloboot.api;
+package com.bestgo.helloboot.controllers.api;
 
 import com.bestgo.helloboot.play.DbSettings;
 import org.springframework.beans.factory.annotation.Autowired;
